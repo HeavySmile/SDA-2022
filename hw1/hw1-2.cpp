@@ -32,7 +32,8 @@ int main()
  
         if (i == dayCount - 1) break;
             
-        int buy = i++;
+        int buy = i;
+        i++;
  
         while ((i < dayCount) && (coinPrices[i] >= coinPrices[i - 1])) i++;
  
